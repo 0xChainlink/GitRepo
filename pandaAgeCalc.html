@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+          Website practice. :)
+    </title>
+
+  </head>
+
+  <body>
+
+    <h1> This is H1 through HTML. </h1>
+
+      <script>
+
+      /*            document.write("<h2> This H2 is from JS. </h2>");
+
+                      var num1 = 17, num2 = 69;
+
+                        if(num1 > num2){
+                        document.write("true.")
+                        } else(document.write("false. <br>"));
+*/
+
+            var pandaIsYoung = "The panda is still young.", pandaIsMature = "Panda is an adult.", pandaIsOld = "The panda is old.";
+
+            var monthOfBirth = 2, yearOfBirth = 2012, currentMonth = new Date().getMonth() + 1;
+
+            var currentAgeOfPandaInYears = new Date().getFullYear();
+
+            var pandaIsYearsOld = (currentAgeOfPandaInYears - yearOfBirth);
+
+            var  pandaIsMonthsOld = (currentMonth - monthOfBirth);
+
+            var pandaIs11Months = 11, pandaIs12Months = 12;
+
+    //  var sentenceIntro = "The Panda is " + pandaIsYearsOld + " years and " + pandaIsMonthsOld + " month(s) old. "
+
+    //  var sentenceIntro2 = "The Panda is " + pandaIsYearsOld + " years and " + 0 + " month(s) old."
+
+  /*      if(pandaIsMonthsOld == -1){
+          pandaIsMonthsOld = 11;
+        } else if (pandaIsMonthsOld == 0) {
+            pandaIsMonthsOld = 12;
+        } else {
+          pandaIsMonthsOld;
+        }
+*/
+          if (pandaIsMonthsOld > 0){
+          (pandaIsMonthsOld);
+          } else if (pandaIsMonthsOld == 0){
+            (pandaIsMonthsOld = pandaIs12Months);
+          } else{
+            (pandaIsMonthsOld = pandaIs11Months);
+          }
+
+          var sentenceIntro = "The Panda is " + pandaIsYearsOld + " years and " + pandaIsMonthsOld + " month(s) old. "
+
+          if (pandaIsYearsOld =< 5){
+            (sentenceIntro + pandaIsYoung);
+          } else if(pandaIsYearsOld > 5 && <= 10){
+            (sentenceIntro + pandaIsMature);
+          } else {
+            (sentenceIntro + pandaIsOld);
+          }
+  /*    else if (pandaIsMonthsOld == 0) {
+        pandaIsYearsOld + 1 && pandaIsMonthsOld = 0;
+        }
+*/
+
+    document.write(sentenceIntro);
+
+    </script>
+
+
+  </body>
+
+</html>
